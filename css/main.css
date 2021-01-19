@@ -534,7 +534,10 @@ label::before {
 
 @media only screen and (max-width : 700px) {
 
-  
+  .wrapper{
+    background:#333;
+    z-index: 1
+  }
  
   .presentation-home{
     display: block;
@@ -567,7 +570,7 @@ label::before {
 
   .presentation-home .showcase p{
     width: 90%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 15px;
     text-align: center;
 
@@ -576,8 +579,7 @@ label::before {
   
   .presentation-home .learn-about-me p {
     font-size: 1rem;
-    top: 20px;
-    padding: 0 10px;
+    padding: 20px 18px;
     color: #ff6347;
     text-shadow: 0px 0px 1px #ff6347;
     text-align: center;
