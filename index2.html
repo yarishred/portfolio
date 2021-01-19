@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+  background: black;
+}
+
+.background-test {
+  background: white;
+  width: 20%;
+  margin: 2% 50%;
+  height: 250px;
+  padding: 1%;
+  position: relative;
+  z-index: auto;
+}
+
+.background-test:before {
+  width: 0%;
+  height: 100%;
+  content: "";
+  background: red;
+  position: absolute;
+  z-index: -1;
+  top:25%;
+  left: 80%;
+  transition: all 0.8s ease-in-out;
+
+  
+}
+
+.background-test:hover > .skill-tech-description {
+  width: 90%;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.background-test:hover::before {
+  width: 90%;
+}
+</style>
+<body>
+  <div>
+    <div class="background-test">Lorem Ipsum</div>
+    <div></div>
+  </div>
+</body>
+</html>
+
+width: 15rem;
+height: 15rem;
+background-color: white;
+border-radius: 100%;
+margin: 1rem;
+text-align: center;
+color: #333;
+font-size: 2rem;
+line-height: 15rem;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+transition: all 0.5s ease-in-out;
+position: relative;
+z-index: auto;
+
+
+position: absolute;
+  content: "";
+  width: 0%;
+  height: 50%;
+  top: 25%;
+  left: 80%;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.8s ease-in-out;
+  z-index: -1;

@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #f3f3f3;
+}
+
+ScrollBar
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+/* Basic Styling */
+
+h1 {
+  font-size: 4rem;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 20px;
+}
+h3 {
+  font-size: 2.2rem;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button to return and next page */
+/* .return-to-about{
+  background-color: #ff6347;
+  position: fixed;
+  right: 5rem;
+  bottom: 3rem;
+  
+} */
+
+.learn-about-me i {
+  display: block;
+  text-shadow: 1px 1px 1px #333;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  animation: grow 1s infinite;
+  transition: all 0.5s linear;
+}
+
+#main-nav {
+  font-size: 2.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  color: #f3f3f3;
+  text-align: center;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  z-index: 65;
+}
+
+#main-nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+.links {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.links:hover {
+  border-bottom: 3px solid tomato;
+  color: tomato;
+}
+
+#main-nav.navigationOverlay {
+  opacity: 1;
+}
+
+.btn {
+  position: relative;
+  padding: 10px 15px;
+  border: none;
+  top: -45%;
+  left: 40%;
+  outline: none;
+  background-color: gold;
+  transition: all 0.5s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  background: #333;
+  top: 12px;
+  right: 0%;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+  overflow-y: hidden;
+}
+
+.overlayScale {
+  opacity: 1;
+  transform: scale(94);
+  font-size: 10px;
+}
+
+label::after .changeBtnColor {
+  color: #f3f3f3;
+}
+
+/* Hambuger Menu */
+
+.wrapper {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .menu {
+  display: block;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background: white;
+  z-index: 80;
+}
+
+label {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  top: 13px;
+  background-color: tomato;
+  transition: all ease-in-out 0.2s;
+  z-index: 80;
+}
+
+label::after {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  content: "";
+  top: -8px;
+  background-color: tomato;
+  transition: all ease-in-out 0.2s;
+  z-index: 80;
+}
+
+label::before {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  content: "";
+  top: 8px;
+  background-color: tomato;
+  transition: all ease-in-out 0.2s;
+  z-index: 80;
+}
+
+.menu:checked ~ label::after {
+  transform: rotate(45deg) translateY(5px) translateX(5px);
+}
+.menu:checked ~ label::before {
+  transform: rotate(-45deg) translateY(-6px) translateX(6px);
+}
+.menu:checked ~ label {
+  background-color: transparent;
+}
+
+/* Showcase Presentation */
+.presentation-home {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(270deg, #333333, #ff6347);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.presentation-home:after {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  background: #f3f3f3;
+  content: "";
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 50%;
+}
+
+.presentation-home .showcase {
+  position: relative;
+  top: -80px;
+  max-width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 45;
+}
+
+.presentation-home .showcase p {
+  width: 60%;
+  margin: -2px 50px;
+  padding: 10px;
+}
+
+.presentation-home .showcase .name {
+  color: #f3f3f3;
+  background-color: tomato;
+  padding: 5px;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.presentation-home .showcase p {
+  color: #333;
+  font-size: 1.5rem;
+
+}
+.presentation-home .showcase .span-rotate {
+  display: inline-block;
+  text-shadow: 1px 1px 1px #333;
+
+  transform: rotate(45deg);
+  transition: all 0.5s ease-in-out;
+  animation: geekrotate 2s infinite;
+}
+
+.presentation-home .learn-about-me {
+  position: absolute;
+  bottom: 0;
+}
+
+.presentation-home .learn-about-me p {
+  color: #f3f3f3;
+  text-shadow: 1px 1px 1px #333;
+}
+
+
+
+/* About Me */
+.presentation-about {
+  width: 100%;
+  height: 170vh;
+  background: #f3f3f3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: -1;
+}
+.presentation-about::before {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  background: #333;
+  content: "";
+  bottom:0;
+  left: 0;
+  z-index: -1;
+  padding: 2rem 0;
+}
+
+.presentation-about p{
+  font-size: 1.5rem;
+}
+ 
+.about-container-item {
+  width: 490px;
+  height: 600px;
+  background: #f3f3f3 content-box;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 20px;
+  position: relative;
+}
+
+.about-container-item:before{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(109deg, #333333, #ff6347, #333333, #ff6347);
+  background-size: 2000px 1500px;
+  position: absolute;
+  top:0;
+  left:0;
+  content: '';
+  z-index: -1;
+}
+
+.about-container-item, h2, p{
+  margin: .5rem;
+  text-align: center;
+}
+
+
+/* My Skills Section */
+
+.presentation-skills{
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.presentation-skills .my-skills{
+  max-width: 1500px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -20px auto;
+}
+
+.presentation-skills .my-skills h3{
+  margin-bottom: 2rem;;
+}
+
+.frontend, .backend{
+  max-width:1200px;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: auto;
+
+}
+
+.skill-tech {
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 100%;
+  margin: 1rem;
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  line-height: 15rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: auto;
+}
+
+.skill-tech-rounded1{
+  position: absolute;
+  width: 19rem;
+  height: 0;
+  background-color: white;
+  top:0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.skill-tech-rounded2{
+  position: absolute;
+  width: 19rem;
+  height: 0;
+  background-color: white;
+  bottom:0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.skill-tech-rounded1 > h3{
+  margin-top: 12rem;
+}
+
+.skill-tech-rounded2 > h3{
+  margin-top: -10rem;
+}
+
+
+.skill-tech img{
+  width: 60%;
+  margin-top: 3rem;
+}
+
+.skill-tech:hover > .skill-tech-rounded1{
+  height: 40rem;
+  opacity: 1;
+  top:19rem;
+  
+}
+
+.skill-tech:hover > .skill-tech-rounded2{
+  height: 40rem;
+  opacity: 1;
+  bottom:-20.9rem;
+  
+}
+.skill-tech:hover{
+  background-color: white!important;
+  z-index: 0;
+
+}
+
+.backend .skill-tech:nth-child(3) > img, 
+.backend .skill-tech:nth-child(2) > img{
+ margin-top: 4rem;
+}
+
+
+
+.focus  {
+  z-index: 1;
+
+} 
+
+
+
+
+
+/* KeyFrames */
+
+/* Keyframe Icon */
+@keyframes grow {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale((1.2));
+  }
+  100% {
+    transform: scale(1);
+    color: white;
+  }
+}
+
+/* Keyframe Gekk Rotate */
+@keyframes geekrotate {
+  0% {
+    color: #f3f3f3;
+    transform: rotate(0deg) scale(1);
+  }
+  20% {
+    color: rgb(47, 255, 64);
+  }
+
+  50% {
+    color: greenyellow;
+  }
+
+  70% {
+    color: orange;
+  }
+  100% {
+    color: gold;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+
+
+#about {
+  width: 100%;
+  height: 500px;
+}
