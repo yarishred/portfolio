@@ -591,7 +591,7 @@ label::before {
     text-shadow: 1px 1px 1px #ff4d2e;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     padding: 3px;
     animation: grow 1s infinite;
     transition: all 0.5s linear;
