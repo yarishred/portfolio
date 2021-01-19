@@ -64,7 +64,7 @@ a {
   text-shadow: 1px 1px 1px #333;
   text-align: center;
   text-decoration: none;
-  padding: 10px;
+  margin: -1px 0;
   animation: grow 1s infinite;
   transition: all 0.5s linear;
 }
@@ -176,7 +176,7 @@ label {
   height: 2px;
   left: 0;
   top: 13px;
-  background-color: tomato;
+  background-color: black;
   transition: all ease-in-out 0.2s;
   z-index: 80;
 }
@@ -188,7 +188,7 @@ label::after {
   left: 0;
   content: "";
   top: -8px;
-  background-color: tomato;
+  background-color: black;
   transition: all ease-in-out 0.2s;
   z-index: 80;
 }
@@ -200,7 +200,7 @@ label::before {
   left: 0;
   content: "";
   top: 8px;
-  background-color: tomato;
+  background-color: black;
   transition: all ease-in-out 0.2s;
   z-index: 80;
 }
@@ -534,15 +534,13 @@ label::before {
 
 @media only screen and (max-width : 700px) {
 
-  .wrapper{
-    background:#333;
-    z-index: 1
-  }
+  
  
   .presentation-home{
     display: block;
     background: white;
-    box-shadow: none
+    box-shadow: none;
+
 
   }
   .presentation-home:after{
@@ -559,8 +557,10 @@ label::before {
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    background-color: tomato;
+    text-align: center;
 
-    background-color: #ff6347;
   }
 
   .presentation-home .showcase h1{
@@ -572,27 +572,26 @@ label::before {
     width: 90%;
     font-size: 1rem;
     margin: 15px;
-    text-align: center;
-
   }
 
+  .learn-about-me {
+    height: auto;
+    
+    top: 80%;
+  }
   
   .presentation-home .learn-about-me p {
     font-size: 1rem;
-    padding: 20px 18px;
     color: #ff6347;
     text-shadow: 0px 0px 1px #ff6347;
-    text-align: center;
   }
 
   .presentation-home .learn-about-me i {
-    display: block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 1px #ff4d2e;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 35px;
-    padding: 3px;
+    margin: -30px 0;
     animation: grow 1s infinite;
     transition: all 0.5s linear;
   }
