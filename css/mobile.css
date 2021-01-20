@@ -65,9 +65,9 @@ img{
     color: #ffffff;
     text-align: center;
     opacity: 0;
-    transition-delay: 0.8s;
+    transition-delay: 0.1s;
     transition-property: all;
-    transition-duration: 0.8s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     z-index: 65;
   }
@@ -103,7 +103,7 @@ img{
     height: 60px;
     opacity: 0;
     border-radius: 50%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
