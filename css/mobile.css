@@ -65,9 +65,9 @@ img{
     color: #ffffff;
     text-align: center;
     opacity: 0;
-    transition-delay: 0.2s;
+    transition-delay: 0.8s;
     transition-property: all;
-    transition-duration: 0.1s;
+    transition-duration: 0.8s;
     transition-timing-function: ease-in-out;
     z-index: 65;
   }
@@ -103,7 +103,7 @@ img{
     height: 60px;
     opacity: 0;
     border-radius: 50%;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,6 +136,8 @@ img{
     position: relative;
     background: white;
     z-index: 80;
+    transition: all ease-in-out 1s;
+
   }
   
   label {
@@ -145,7 +147,7 @@ img{
     left: 0;
     top: 13px;
     background-color: white;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 1s;
     z-index: 80;
   }
   
