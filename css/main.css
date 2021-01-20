@@ -669,13 +669,13 @@ label::before {
     width: 10rem;
     height: 10rem;
     margin-top: -5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
   }
   
   .backend{
     height: auto;
     position: relative;    
-    top: 89%
+    top: 100%
   }
 
 
@@ -689,14 +689,20 @@ label::before {
    margin: 2rem;
   }
 
-  .skill-tech-rounded1{
+  .skill-tech-rounded1, 
+  .skill-tech-rounded2{
     width: 15rem;
   }
 
   .skill-tech:hover > .skill-tech-rounded1{
     height: 28rem;
-    opacity: 1;
     top:14rem;
+  }
+
+  .skill-tech:hover > .skill-tech-rounded2{
+    height: 28rem;
+    bottom: -15rem;
+
   }
 
   .skill-tech-rounded1 h3{
@@ -706,6 +712,13 @@ label::before {
     bottom: -10%;
   }
 
+  .skill-tech-rounded2 h3{
+    color: #333;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 70%;
+  }
+
   .skill-tech-rounded1 p{
     color: #333;
     font-size: 0.8rem;
@@ -713,6 +726,12 @@ label::before {
     top:35%
   }
 
+  .skill-tech-rounded2 p{
+    color: #333;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom:30%;
+  }
 
 
 
