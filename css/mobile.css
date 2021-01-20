@@ -7,7 +7,11 @@ body {
     font-family: "Poppins", sans-serif;
     color: #f3f3f3;
     text-align: center;
+}
 
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -190,7 +194,7 @@ img{
   .presentation-home{
       width: 100%;
       height: 100vh;
-      background-color: #fff;
+      background-color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -221,10 +225,12 @@ img{
     margin-top: 30px 0;
     padding: 0 4px;
     font-size: 1.1rem;
+    color: #333333;
+
   }
 
   .presentation-home .showcase .name {
-    color: #f3f3f3;
+    color: white;
     padding: 5px;
     text-shadow: 1px 1px 1px #333;
   }
@@ -239,6 +245,68 @@ img{
 
   .presentation-home .learn-about-me{
     display: none;
+  }
+
+  /* About me section */
+  .presentation-about {
+    width: 100%;
+    background-color: white;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding:  3.5rem 1.5rem;
+
+  }
+  .presentation-about::before {
+    width: 100%;
+    height: 61%;
+    position: absolute;
+    background: #333;
+    content: "";
+    top:0;
+    left: 0;
+    z-index: -1;
+  }
+
+
+  .presentation-about > h1, p{
+    color: white;
+    text-align: center;
+  }
+  .presentation-about h1{
+    text-shadow: 1px 1px 1px #000000;
+  }
+  .presentation-about span{
+    color :#ff6347;
+    text-shadow: 1px 1px 1px #c93f27;
+
+  }
+
+  .presentation-about  .about-container-item > p, h2{
+    color: #333;
+
+  }
+
+  .presentation-about .about-container-item{
+    width: 300px;
+    height: 25rem;
+    background: white content-box;
+    padding: 1rem;
+    margin: 30px auto;
+    position: relative;
+    box-sizing: border-box;
+    
+  }
+  .presentation-about .about-container-item:before{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #333333 8%, #ff6347 10%);
+    background-size: 2000px 1500px;
+    position: absolute;
+    top:0;
+    left:0;
+    content: '';
+    z-index: -1;
   }
 
   /* Keyframes */
