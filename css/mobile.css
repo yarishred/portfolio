@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: "Poppins", sans-serif;
+    color: #f3f3f3;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+
+  }
+
+h3 {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    display: block;
+    text-shadow: 1px 1px 1px #333;
+    text-align: center;
+    text-decoration: none;
+    margin: -1px 0;
+    animation: grow 1s infinite;
+    transition: all 0.5s linear;
+}
+
+img{
+    width: 25%;
+}
+
+#main-nav {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    z-index: 65;
+  }
+
+  #main-nav ul li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  .links {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding: 3px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .links:hover {
+    border-bottom: 3px solid #ff6347;
+    color: tomato;
+  }
+  
+  #main-nav.navigationOverlay {
+    opacity: 1;
+  }
+  
+  .overlay {
+    position: fixed;
+    background: #333;
+    top: 0px;
+    right: 0%;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 60;
+    overflow-y: hidden;
+  }
+
+  .overlayScale {
+    opacity: 1;
+    transform: scale(94);
+    font-size: 10px;
+  }
+
+  .wrapper {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper .menu {
+    display: block;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background: white;
+    z-index: 80;
+  }
+  
+  label {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    top: 13px;
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    z-index: 80;
+  }
+  
+  label::after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    content: "";
+    top: -8px;
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    z-index: 80;
+  }
+  
+  label::before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    content: "";
+    top: 8px;
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+    z-index: 80;
+  }
+
+  .menu:checked ~ label::after {
+    transform: rotate(45deg) translateY(5px) translateX(5px);
+  }
+  .menu:checked ~ label::before {
+    transform: rotate(-45deg) translateY(-6px) translateX(6px);
+  }
+  .menu:checked ~ label {
+    background-color: transparent;
+  }
+
+  .presentation-home{
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding:  3.5rem 1.5rem;
+
+  }
+
+  .presentation-home:after {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    background: tomato;
+    content: "";
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 100%;
+    /* border-bottom-right-radius: 50%; */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+
+  }
+  .presentation-home .showcase {
+    z-index: 45;
+  }
+
+  .presentation-home .showcase p {
+    margin-top: 30px 0;
+    padding: 0 4px;
+    font-size: 1.1rem;
+  }
+
+  .presentation-home .showcase .name {
+    color: #f3f3f3;
+    padding: 5px;
+    text-shadow: 1px 1px 1px #333;
+  }
+
+  .presentation-home .showcase .span-rotate {
+    display: inline-block;
+    text-shadow: 1px 1px 1px #333;
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+    animation: geekrotate 2s infinite;
+  }
+
+  .presentation-home .learn-about-me{
+    display: none;
+  }
+
+  /* Keyframes */
+
+  /* Key for rotate geek word */
+  @keyframes geekrotate {
+    0% {
+      color: #f3f3f3;
+      transform: rotate(0deg) scale(1);
+    }
+    20% {
+      color: rgb(47, 255, 64);
+    }
+  
+    50% {
+      color: greenyellow;
+    }
+  
+    70% {
+      color: orange;
+    }
+    100% {
+      color: gold;
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+
