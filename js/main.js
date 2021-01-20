@@ -50,13 +50,11 @@ for (let i = 0; i < skills.length; i++) {
 
     skills.forEach((skill, index) => {
       if (!skill.classList.contains("focus")) {
-        skills[index].style.opacity = 0.1;
-        skills[index].style.zIndex = -1
-
+        skills[index].style.opacity = 0.2;
+        skills[index].style.zIndex = -1;
       } else {
         skills[index].style.opacity = 1;
-        skills[index].style.zIndex = 0
-
+        skills[index].style.zIndex = 0;
       }
     });
     skillscounter = i;
@@ -70,11 +68,9 @@ for (let i = 0; i < skills.length; i++) {
     skills.forEach((skill, index) => {
       if (!skill.classList.contains("focus")) {
         skills[index].style.opacity = 1;
-        skills[index].style.zIndex = 0
-
+        skills[index].style.zIndex = 0;
       }
     });
   });
 }
-
 

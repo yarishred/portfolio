@@ -461,7 +461,7 @@ label::before {
   
 }
 .skill-tech:hover{
-  background-color: white!important;
+  background-color: white;
   z-index: 0;
 
 }
@@ -637,7 +637,6 @@ label::before {
 
   .presentation-skills{
     display: block;
-    font-size: 2.5rem;
     background-color: #333;
     z-index: 0;
   }
@@ -658,7 +657,8 @@ label::before {
 
   .my-skills h3{
     color: white;
-    margin-top: 10rem;
+    margin-top: 40rem;
+    padding: 2rem 0;
   }
 
   .my-skills .frontend, .my-skills .backend{
@@ -671,6 +671,12 @@ label::before {
     margin-top: -5rem;
     margin-bottom: 7rem;
   }
+  
+  .backend{
+    height: auto;
+    position: relative;    
+    top: 89%
+  }
 
 
   .skill-tech img{
@@ -678,6 +684,34 @@ label::before {
     margin: 0;
   }
 
+  .backend .skill-tech:nth-child(3) > img, 
+  .backend .skill-tech:nth-child(2) > img{
+   margin: 2rem;
+  }
+
+  .skill-tech-rounded1{
+    width: 15rem;
+  }
+
+  .skill-tech:hover > .skill-tech-rounded1{
+    height: 28rem;
+    opacity: 1;
+    top:14rem;
+  }
+
+  .skill-tech-rounded1 h3{
+    color: #333;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -10%;
+  }
+
+  .skill-tech-rounded1 p{
+    color: #333;
+    font-size: 0.8rem;
+    position: absolute;
+    top:35%
+  }
 
 
 
