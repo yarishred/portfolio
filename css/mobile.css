@@ -348,7 +348,7 @@ img{
 
   .presentation-skills{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: block;
     padding:  0.5rem 1.5rem;
     z-index: -1;
@@ -390,9 +390,12 @@ img{
     align-items: center;
   }
 
-  .presentation-skills .my-skills .frontend, .backend{
+  .presentation-skills .my-skills h2{
+    margin-bottom: -3px;
+  }
+
+  .presentation-skills .my-skills .frontend{
     display: block;
-    padding: 2rem 0 ;
   }
 
   .skill-tech{
@@ -408,7 +411,7 @@ img{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
   }
 
-  .skill-tech .skill-tech-rounded1{
+  .skill-tech .skill-tech-rounded{
     width: 0;
     height: 11rem;
     position: absolute;
@@ -425,11 +428,12 @@ img{
     clear: both;
   }
 
-  .skill-tech-rounded1  h3,
-  .skill-tech-rounded1  p{
+
+
+  .skill-tech-rounded h3,
+  .skill-tech-rounded p{
     color:white;
     text-shadow: 1px 1px 1px #333;
-
   }
   
   .skill-tech img{
@@ -437,9 +441,19 @@ img{
     
   }
 
-  .skill-tech:hover  .skill-tech-rounded1{
+  .skill-tech:hover  .skill-tech-rounded{
     width: 300px;
     opacity: 1;
+  }
+
+  .presentation-projects {
+    width: 100%;
+    background-color: #333;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding:  0.5rem 1.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   }
 
   
