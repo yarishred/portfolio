@@ -405,8 +405,8 @@ label::before {
 }
 
 .skill-tech {
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   background-color: white;
   border-radius: 100%;
   margin: 1rem;
@@ -422,7 +422,7 @@ label::before {
 
 .skill-tech-rounded1{
   position: absolute;
-  width: 19rem;
+  width: 17rem;
   height: 0;
   background-color: white;
   top:0;
@@ -441,7 +441,7 @@ label::before {
 
 .skill-tech-rounded2{
   position: absolute;
-  width: 19rem;
+  width: 17rem;
   height: 0;
   background-color: white;
   bottom:0;
@@ -468,7 +468,7 @@ label::before {
 
 
 .skill-tech img{
-  width: 60%;
+  width: 50%;
   margin-top: 3rem;
 }
 
@@ -490,10 +490,6 @@ label::before {
 
 }
 
-.backend .skill-tech:nth-child(3) > img, 
-.backend .skill-tech:nth-child(2) > img{
- margin-top: 4rem;
-}
 
 
 
