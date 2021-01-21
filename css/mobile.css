@@ -348,6 +348,7 @@ img{
 
   .presentation-skills{
     width: 100%;
+    height: 100vh;
     display: block;
     padding:  0.5rem 1.5rem;
     z-index: -1;
@@ -381,133 +382,65 @@ img{
     color: #333;
   }
 
-  .frontend, .backend{
-    z-index: 0;
-  
-  }
-
-  .my-skills{
-    display: block;
-  }
-
-  .skill-tech{
-    display: b;
-    width: 8rem;
-    height: 8rem;
-    background-color: white;
-    border-radius: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 3rem auto;
-    position: relative;
-    z-index: 1;
-    transition: all 0.5s ease-in;
-
-  }
-
-  .skill-tech-rounded1{
-    position: absolute;
-    width: 0;
-    height: 15rem;
-    background-color: white;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
-    transition: width 0.1s ease-in;
-    display: block;
-    line-height: 30px;
-  }
-
-  .skill-tech-rounded1  h3{
-    font-size: 1rem;
-    margin-bottom: 60px;
-
-  }
-  .skill-tech-rounded1  p{
-    font-size: 0.8rem;
-    line-height: 15px;
-    margin-top: -5px;
-
-  }
-  
-  
-  .skill-tech-rounded2{
-    position: absolute;
-    width: 0;
-    height: 15rem;
-    background-color: white;
-    bottom:0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in;
+  .presentation-skills .my-skills{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 30px;
   }
-  
+
+  .presentation-skills .my-skills .frontend, .backend{
+    display: block;
+    padding: 2rem 0 ;
+  }
+
+  .skill-tech{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-color: #ff6347;
+    margin: 3rem;
+    padding: 2rem;
+    position: relative;
+    clear: both;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .skill-tech .skill-tech-rounded1{
+    width: 0;
+    height: 11rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: #ff6347;  
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    clear: both;
+  }
+
+  .skill-tech-rounded1  h3,
+  .skill-tech-rounded1  p{
+    color:white;
+    text-shadow: 1px 1px 1px #333;
+
+  }
   
   .skill-tech img{
-    width: 4rem;
-    margin-top: 2rem;
-  }
-
-
-  .presentation-skills  .skill-tech {
-    color: #333;
-    text-transform: uppercase;
-    font-weight: bold;
-  } 
-
-  
-  
-  .skill-tech-rounded2 > h3{
-    margin-top: -10rem;
-  }
-  
-  
-  .skill-tech img{
-    width: 4rem;
-    margin-top: 2rem;
-  }
-
- 
-  
-  .skill-tech:hover > .skill-tech-rounded1{
-    width: 310px;
-    opacity: 1;
-    margin-top: 50px;
-  }
-  
-  .skill-tech:hover > .skill-tech-rounded2{
     width: 6rem;
-    opacity: 1;
-    bottom:-20.9rem;
     
   }
-  .skill-tech:hover{
-    background-color: white;
-    z-index: 0;
-  
+
+  .skill-tech:hover  .skill-tech-rounded1{
+    width: 300px;
+    opacity: 1;
   }
-  
-  .backend .skill-tech:nth-child(3) > img, 
-  .backend .skill-tech:nth-child(2) > img{
-   margin-top: 4rem;
-  }
-  
-  
-  
-  .focus  {
-    z-index: 1;
-  } 
-  
 
   
   /* Keyframes */
