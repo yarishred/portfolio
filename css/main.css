@@ -220,12 +220,11 @@ label::before {
   width: 100%;
   height: 100vh;
   background: linear-gradient(270deg, #333333, #ff6347);
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .presentation-home:after {
@@ -281,7 +280,7 @@ label::before {
 
 .presentation-home .learn-about-me {
   position: absolute;
-  bottom: 0;
+  bottom: 2rem;
 }
 
 .presentation-home .learn-about-me p {
@@ -294,7 +293,6 @@ label::before {
 /* About Me */
 .presentation-about {
   width: 100%;
-  height: 170vh;
   background: #f3f3f3;
   position: relative;
   display: flex;
@@ -315,16 +313,26 @@ label::before {
   padding: 2rem 0;
 }
 
-.presentation-about p{
-  font-size: 1.5rem;
+.presentation-about h1{
+  padding: 2rem;  
+  text-shadow: 1px 1px 1px #333;
+
 }
 
-.presentation-skills  .l1{
+.presentation-about span{
+  color: tomato;  	
+  font-weight: bold;
+}
+
+.presentation-about p{
+  padding: 2rem 4rem;  
+}
+.presentation-about  .l1{
   display: block;
-  width: 100%;
-  height: 1px;
+  width: 80%;
+  height: 1.2px;
   background-color: #333;
-  margin-bottom: -13px;
+  margin-bottom: 30px;
 }
  
 .about-container-item {
