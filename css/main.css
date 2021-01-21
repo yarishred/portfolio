@@ -302,7 +302,7 @@ label::before {
   z-index: -1;
   padding-bottom: 6rem;
 }
-.presentation-about::before {
+/* .presentation-about::before {
   width: 100%;
   height: 70vh;
   position: absolute;
@@ -313,7 +313,7 @@ label::before {
   z-index: -1;
   margin-bottom: -10rem;
   padding: 2rem 0;
-}
+} */
 
 .presentation-about h1{
   padding: 2rem;  
@@ -327,7 +327,7 @@ label::before {
 }
 
 .presentation-about p{
-  padding: 2rem 4rem;  
+  padding: 0 4rem;  
 }
 
 .presentation-about  .l1{
@@ -340,7 +340,7 @@ label::before {
  
 .about-container-item {
   max-width: 400px;
-  height: 550px;
+  height: 30rem;
   background: #f3f3f3 content-box;
   padding: 1rem;
   box-sizing: border-box;
