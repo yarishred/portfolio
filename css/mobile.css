@@ -266,21 +266,14 @@ img{
     padding:  3.5rem 1.5rem;
   }
   .presentation-about  .l1{
-    width: 40%;
-    background-color: white;
-    position: absolute;
-    left:0;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #757575;
+    margin-bottom: -13px;
 
   }
-  .presentation-about  .l2{
-    width: 60%;
-    background-color: white;
-    position: absolute;
-    right:0;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-
-  }
+ 
 
   .presentation-about::before {
     width: 100%;
@@ -304,7 +297,8 @@ img{
     text-shadow: 1px 1px 1px #000000;
   }
   .presentation-about p{
-    padding: 20px 0;
+    padding: 20px ;
+    font-size: 0.8rem;
   }
   .presentation-about span{
     color :#ff6347;
@@ -315,6 +309,7 @@ img{
   .presentation-about  .about-container-item  div p, h2{
     color: #333;
     text-transform: uppercase;
+    font-weight: bold;
   }
 
 
