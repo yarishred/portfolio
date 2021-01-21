@@ -11,6 +11,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #f3f3f3;
+  text-align: center;
 }
 
 /* ScrollBar */
@@ -48,6 +49,15 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Span Line */
+.line-decoration{
+  display: block;
+  width: 70%;
+  height: 3px;
+  background-color: #333;
+  margin: auto;
 }
 
 /* Button to return and next page */
@@ -318,6 +328,14 @@ label::before {
 .presentation-about p{
   font-size: 1.5rem;
 }
+
+.presentation-skills  .l1{
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: -13px;
+}
  
 .about-container-item {
   width: 490px;
@@ -327,6 +345,11 @@ label::before {
   box-sizing: border-box;
   margin: 20px;
   position: relative;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-container-item:before{
@@ -341,9 +364,10 @@ label::before {
   z-index: -1;
 }
 
-.about-container-item, h2, p{
+.about-container-item div p, h2{
   margin: .5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -365,8 +389,9 @@ label::before {
   margin: -20px auto;
 }
 
-.presentation-skills .my-skills h3{
+.presentation-skills .my-skills h2{
   margin-bottom: 2rem;;
+  padding: 4rem 0 ;
 }
 
 .frontend, .backend{

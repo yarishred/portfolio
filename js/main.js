@@ -40,6 +40,7 @@ links.forEach((link) => link.addEventListener("click", accessToLink));
 
 //Hover skills
 const skills = document.querySelectorAll(".skill-tech");
+console.log(skills)
 
 let skillscounter = 0;
 
@@ -52,6 +53,7 @@ for (let i = 0; i < skills.length; i++) {
       if (!skill.classList.contains("focus")) {
         skills[index].style.opacity = 0.2;
         skills[index].style.zIndex = -1;
+       
       } else {
         skills[index].style.opacity = 1;
         skills[index].style.zIndex = 0;
