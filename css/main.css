@@ -176,7 +176,7 @@ label {
   height: 2px;
   left: 0;
   top: 13px;
-  background-color: black;
+  background-color: tomato;
   transition: all ease-in-out 0.2s;
   z-index: 80;
 }
@@ -188,7 +188,7 @@ label::after {
   left: 0;
   content: "";
   top: -8px;
-  background-color: black;
+  background-color: tomato;
   transition: all ease-in-out 0.2s;
   z-index: 80;
 }
@@ -200,7 +200,7 @@ label::before {
   left: 0;
   content: "";
   top: 8px;
-  background-color: black;
+  background-color: tomato;
   transition: all ease-in-out 0.2s;
   z-index: 80;
 }
