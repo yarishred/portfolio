@@ -21,31 +21,22 @@ body {
 
 /* Basic Styling */
 
-h1 {
-  font-size: 4rem;
+h1, h2, h3, p {
   color: #333;
-  padding: 20px;
-  text-align: center;
+}
+h1{
+  font-size: 3rem;
 }
 h2 {
-  font-size: 2.5rem;
-  color: #333;
-  padding: 20px;
+  font-size: 2rem;
 }
 h3 {
   font-size: 2.2rem;
-  color: #333;
-  padding: 20px;
-  text-align: center;
 }
-
-
 p {
   font-size: 1.2rem;
-  color: #333;
-  padding: 20px;
-}
 
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -69,12 +60,11 @@ a {
   
 } */
 
-.learn-about-me i {
+i {
   display: block;
   text-shadow: 1px 1px 1px #333;
   text-align: center;
   text-decoration: none;
-  margin: -1px 0;
   animation: grow 1s infinite;
   transition: all 0.5s linear;
 }
@@ -339,7 +329,7 @@ label::before {
  
 .about-container-item {
   width: 490px;
-  height: 600px;
+  height: 800px;
   background: #f3f3f3 content-box;
   padding: 1rem;
   box-sizing: border-box;

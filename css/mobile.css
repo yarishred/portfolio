@@ -332,7 +332,6 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
   .presentation-about .about-container-item:before{
     width: 100%;
