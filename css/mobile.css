@@ -259,7 +259,7 @@ img{
   /* About me section */
   .presentation-about {
     width: 100%;
-    background-color: white;
+    background-color: #333;
     display: block;
     position: relative;
     z-index: 1;
@@ -271,7 +271,7 @@ img{
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #757575;
+    background-color: #333;
     margin-bottom: -13px;
 
   }
@@ -281,7 +281,7 @@ img{
     width: 100%;
     height: 61%;
     position: absolute;
-    background: #333;
+    background: #ff6347;
     content: "";
     top:0;
     left: 0;
@@ -296,22 +296,25 @@ img{
     text-align: center;
   }
   .presentation-about h1{
-    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px #333;
   }
   .presentation-about p{
     padding: 20px ;
     font-size: 0.8rem;
+    color: white;
+    text-shadow: 1px 1px 1px #333;
+
   }
   .presentation-about span{
-    color :#ff6347;
-    text-shadow: 1px 1px 1px #c93f27;
-
+    color :#333;  	
+    font-weight: bold;
   }
 
   .presentation-about  .about-container-item  div p, h2{
     color: #333;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: none;
   }
 
 
@@ -345,11 +348,168 @@ img{
 
   .presentation-skills{
     width: 100%;
-    background-color: #ff6347;
     display: block;
+    padding:  0.5rem 1.5rem;
+    z-index: -1;
+
+  }
+  .presentation-skills span{
+    color :#ff6347;
+    font-weight: bold;
+  }
+
+  .presentation-skills  .l1{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin-bottom: -13px;
 
   }
 
+  .presentation-skills > h1, p{
+    color: #333;
+    text-align: center;
+  }
+  .presentation-skills h1{
+    text-shadow: 1px 1px 1px #333;
+  }
+  
+  .presentation-skills p{
+    padding: 20px ;
+    font-size: 0.8rem;
+    color: #333;
+  }
+
+  .frontend, .backend{
+    z-index: 0;
+  
+  }
+
+  .my-skills{
+    display: block;
+  }
+
+  .skill-tech{
+    display: b;
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 3rem auto;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+
+  }
+
+  .skill-tech-rounded1{
+    position: absolute;
+    width: 0;
+    height: 15rem;
+    background-color: white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: width 0.1s ease-in;
+    display: block;
+    line-height: 30px;
+  }
+
+  .skill-tech-rounded1  h3{
+    font-size: 1rem;
+    margin-bottom: 60px;
+
+  }
+  .skill-tech-rounded1  p{
+    font-size: 0.8rem;
+    line-height: 15px;
+    margin-top: -5px;
+
+  }
+  
+  
+  .skill-tech-rounded2{
+    position: absolute;
+    width: 0;
+    height: 15rem;
+    background-color: white;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+  }
+  
+  
+  .skill-tech img{
+    width: 4rem;
+    margin-top: 2rem;
+  }
+
+
+  .presentation-skills  .skill-tech {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+  } 
+
+  
+  
+  .skill-tech-rounded2 > h3{
+    margin-top: -10rem;
+  }
+  
+  
+  .skill-tech img{
+    width: 4rem;
+    margin-top: 2rem;
+  }
+
+ 
+  
+  .skill-tech:hover > .skill-tech-rounded1{
+    width: 310px;
+    opacity: 1;
+    margin-top: 50px;
+  }
+  
+  .skill-tech:hover > .skill-tech-rounded2{
+    width: 6rem;
+    opacity: 1;
+    bottom:-20.9rem;
+    
+  }
+  .skill-tech:hover{
+    background-color: white;
+    z-index: 0;
+  
+  }
+  
+  .backend .skill-tech:nth-child(3) > img, 
+  .backend .skill-tech:nth-child(2) > img{
+   margin-top: 4rem;
+  }
+  
+  
+  
+  .focus  {
+    z-index: 1;
+  } 
+  
+
+  
   /* Keyframes */
 
   /* Key for rotate geek word */
