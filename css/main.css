@@ -31,7 +31,7 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
 }
 p {
   font-size: 1.2rem;
@@ -341,7 +341,7 @@ label::before {
 .about-container-item {
   max-width: 400px;
   height: 30rem;
-  background: #f3f3f3 content-box;
+  background: white content-box;
   padding: 1rem;
   box-sizing: border-box;
   margin: 20px;
@@ -380,8 +380,28 @@ label::before {
   position: relative;
 }
 
+.presentation-skills h1{
+  padding: 2rem;  
+  text-shadow: 1px 1px 1px #333;
+}
+
+.presentation-skills  .l1{
+  display: block;
+  width: 80%;
+  height: 1.2px;
+  background-color: #333;
+  margin-bottom: 30px;
+}
+
+.presentation-skills p{
+  padding: 0 4rem;  
+}
+.presentation-skills h2{
+  padding: 4rem;  
+}
+
 .presentation-skills .my-skills{
-  max-width: 1500px;
+  max-width: 1200px;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -390,9 +410,8 @@ label::before {
   margin: -20px auto;
 }
 
-.presentation-skills .my-skills h2{
-  margin-bottom: 2rem;;
-  padding: 4rem 0 ;
+.presentation-skills h2{
+  margin-top: -41px;
 }
 
 .frontend, .backend{
@@ -402,12 +421,11 @@ label::before {
   justify-content: center;
   align-items: center;
   z-index: auto;
-
 }
 
 .skill-tech {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   background-color: white;
   border-radius: 100%;
   margin: 1rem;
@@ -421,9 +439,10 @@ label::before {
   z-index: auto;
 }
 
-.skill-tech-rounded1{
+.skill-tech-rounded1,
+.skill-tech-rounded2{
   position: absolute;
-  width: 17rem;
+  width: 20rem;
   height: 0;
   background-color: white;
   top:0;
@@ -440,50 +459,41 @@ label::before {
   line-height: 30px;
 }
 
-.skill-tech-rounded2{
-  position: absolute;
-  width: 17rem;
-  height: 0;
-  background-color: white;
-  bottom:0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  opacity: 0;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 30px;
+.skill-tech-rounded1  h3{
+  margin-top: 5rem;
+}
+.skill-tech-rounded1 p{
+  font-size: 1rem;
+  padding: 1rem;
 }
 
-.skill-tech-rounded1 > h3{
-  margin-top: 12rem;
+.skill-tech-rounded2  h3{
+  margin-top: -5rem;
 }
-
-.skill-tech-rounded2 > h3{
-  margin-top: -10rem;
+.skill-tech-rounded2 p{
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 
 .skill-tech img{
   width: 50%;
-  margin-top: 3rem;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
 .skill-tech:hover > .skill-tech-rounded1{
-  height: 40rem;
+  height: 25rem;
   opacity: 1;
-  top:19rem;
+  top:12rem;
 }
 
 .skill-tech:hover > .skill-tech-rounded2{
-  height: 40rem;
+  height: 25rem;
   opacity: 1;
-  bottom:-20.9rem;
-  
+  top: -1.5rem;  
 }
 .skill-tech:hover{
   background-color: white;
