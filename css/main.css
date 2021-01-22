@@ -490,6 +490,7 @@ label::before {
 
 .skill-tech-rounded1,
 .skill-tech-rounded2{
+  visibility: hidden;
   position: absolute;
   width: 20rem;
   height: 0;
@@ -531,12 +532,15 @@ label::before {
   height: 25rem;
   opacity: 1;
   top:12rem;
+  visibility: visible;
 }
 
 .skill-tech:hover > .skill-tech-rounded2{
   height: 25rem;
   opacity: 1;
   top: -1.5rem;  
+  visibility: visible;
+
 }
 .skill-tech:hover{
   background-color: white;
