@@ -299,9 +299,10 @@ label::before {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  z-index: -1;
   padding-bottom: 6rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
 
 }
 .presentation-about::before {
@@ -312,9 +313,11 @@ label::before {
   content: "";
   top:0;
   left: 0;
-  z-index: -1;
   margin-bottom: -10rem;
   padding: 2rem 0;
+  z-index: -1;
+
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 }
 
 .presentation-about h1{
@@ -354,6 +357,34 @@ label::before {
   justify-content: center;
   align-items: center;
 }
+.wrapper-about-container-item{
+  width: 400px;
+  height: 32rem;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  left: 0;
+
+}
+
+.wrapper-about-container-item:hover{
+  left: -15%
+}
+
+.teacher-description{
+  width: 0;
+  height: 15rem;
+  position: absolute;
+  top:50%;
+  left:100%;
+  transform: translateY(-50%);
+  content: '';
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.wrapper-about-container-item:hover .teacher-description{
+  width: 400px;
+}
 
 .about-container-item:before{
   width: 100%;
@@ -365,6 +396,7 @@ label::before {
   left:0;
   content: '';
   z-index: -1;
+
 }
 
 .about-container-item div p, h2{
