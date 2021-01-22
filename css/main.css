@@ -301,6 +301,8 @@ label::before {
   align-items: center;
   z-index: -1;
   padding-bottom: 6rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
 }
 .presentation-about::before {
   width: 100%;
@@ -376,7 +378,10 @@ label::before {
 
 .presentation-skills{
   max-width: 100%;
+  height: 80vh;
   position: relative;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .presentation-skills h1{
@@ -507,9 +512,21 @@ label::before {
 
 } 
 
+.presentation-projects {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff6347;
+}
 
+/* My Projects */
+.presentation-projects h1{
+  padding: 2rem;  
+  text-shadow: 1px 1px 1px #333;
+}
 
-
+.presentation-projects span{
+  color: #f3f3f3;
+}
 
 /* KeyFrames */
 
