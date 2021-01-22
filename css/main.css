@@ -410,6 +410,7 @@ label::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .presentation-skills h2{
