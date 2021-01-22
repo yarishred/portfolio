@@ -376,7 +376,6 @@ label::before {
 
 .presentation-skills{
   max-width: 100%;
-  height: 100vh;
   position: relative;
 }
 
@@ -402,7 +401,6 @@ label::before {
 
 .presentation-skills .my-skills{
   max-width: 1200px;
-  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
