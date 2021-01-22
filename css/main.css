@@ -370,9 +370,9 @@ label::before {
   left: -15%
 }
 
-.teacher-description{
+.about-description{
   width: 0;
-  height: 15rem;
+  height: 25rem;
   position: absolute;
   top:50%;
   left:100%;
@@ -382,7 +382,7 @@ label::before {
   transition: all 0.5s ease-in-out;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.wrapper-about-container-item:hover .teacher-description{
+.wrapper-about-container-item:hover .about-description{
   width: 400px;
 }
 
@@ -670,7 +670,6 @@ label::before {
     color: #ff6347;
     text-shadow: 0px 0px 1px #ff6347;
   }
-
   .presentation-home .learn-about-me i {
     font-size: 1.5rem;
     text-shadow: 1px 1px 1px #ff4d2e;
