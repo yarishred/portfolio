@@ -40,7 +40,6 @@ links.forEach((link) => link.addEventListener("click", accessToLink));
 
 //Hover skills
 const skills = document.querySelectorAll(".skill-tech");
-console.log(skills)
 
 let skillscounter = 0;
 
