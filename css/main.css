@@ -419,7 +419,7 @@ label::before {
   height: 54rem;
   position: relative;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-
+  z-index: 1;
 }
 
 .presentation-skills h1{
